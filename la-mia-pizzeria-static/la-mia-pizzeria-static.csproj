@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Nuova cartella\" />
+    <Compile Remove="wwwroot\Nuova cartella\**" />
+    <Content Remove="wwwroot\Nuova cartella\**" />
+    <EmbeddedResource Remove="wwwroot\Nuova cartella\**" />
+    <None Remove="wwwroot\Nuova cartella\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
 </Project>
